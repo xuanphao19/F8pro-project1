@@ -1,0 +1,642 @@
+:root {
+  --color: #0f1b4c;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🌼🌼 ====================
+  =======  COMMON   =======
+  ==================== 🌼🌼 */
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  width: 1110px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 98px;
+  padding: 12px 16px;
+
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  border-radius: 12px;
+  background: var(--color);
+  border: 1px solid transparent;
+  transition: opacity 0.25s linear, color 0.25s ease-in-out, background-color 0.25s ease-in-out,
+    border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+/* 🌼🌼 ====================
+  =======   HEADER   =======
+  ==================== 🌼🌼 */
+
+.header {
+  height: 100vh;
+  background: #e6f0ff;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-top: 38px;
+}
+
+.navbar ul {
+  display: flex;
+  margin-left: 50px;
+}
+
+.navbar .actions {
+  margin-left: auto;
+}
+
+.navbar ul a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #4f5361;
+  padding: 8px 14px;
+}
+
+.navbar .actions-link {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #4f5361;
+}
+
+.navbar .actions-btn {
+  padding: 7px 16px;
+  margin-left: 18px;
+  border-radius: 8px;
+}
+
+.hero {
+  margin-top: 130px;
+}
+
+.hero .title {
+  width: 51%;
+}
+
+.hero .sub-title {
+  color: #687690;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.018rem;
+}
+
+.hero .title {
+  margin-top: 8px;
+  color: #000336;
+  line-height: 1.19;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 7.6rem;
+}
+
+.hero .desc {
+  margin-top: 30px;
+  color: #5a6473;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.78;
+}
+
+.hero-btn {
+  min-width: 170px;
+  margin-top: 40px;
+}
+
+.hero-img {
+  position: absolute;
+  right: calc((100vw - 1110px) / 2 - 100px);
+  bottom: 0;
+}
+
+/* 🌼🌼 ====================
+  =======  CLIENTS   =======
+  ==================== 🌼🌼 */
+
+.clients {
+  margin-top: 79px;
+  padding: 43px 0 64px;
+}
+
+.clients .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients .desc {
+  color: #7d8589;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.clients .row-desc {
+  margin-top: 23px;
+}
+
+.clients .brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 96px;
+}
+
+.clients .brand a {
+  padding: 10px 8px 6px;
+  width: max-content;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: box-shadow 0.15s linear;
+}
+
+/* 🌼🌼 ====================
+  =======   Guides    =======
+  ==================== 🌼🌼 */
+
+.guides {
+  margin-top: 40px;
+  padding: 94px 0 80px;
+}
+
+.guides .sub-title {
+  position: relative;
+  color: var(--color);
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.guides .sub-title::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 41px;
+  height: 4px;
+  border-radius: 0.75rem;
+  background: var(--color);
+}
+
+.guides .desc {
+  width: 459px;
+  max-width: 100%;
+  margin: 20px auto 0;
+  color: #5a6473;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.88;
+}
+
+.list-guides {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.guide-item {
+  text-align: center;
+  margin: 0 70px;
+}
+
+.guide-item .title {
+  margin-top: 26px;
+  color: #3b3c45;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.guide-item .link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0689ff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.guide-item .arrow {
+  margin-left: 6px;
+}
+
+.guide-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.guide-cta .btn {
+  min-width: 170px;
+}
+
+/* 🌼🌼 ====================
+  ========  Featured   =======
+  ==================== 🌼🌼 */
+
+.featured {
+  margin-top: 40px;
+  padding: 110px 0;
+  background: #f5fafe;
+}
+
+.featured .sub-title {
+  color: #000339;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.featured .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.featured .desc {
+  color: #5a6473;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.88;
+}
+
+.featured .link {
+  color: #0689ff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.featured .link .arrow {
+  position: relative;
+  top: -2px;
+  margin-left: 8px;
+}
+
+.featured .list {
+  display: flex;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.featured .item {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+
+  transition: box-shadow 0.15s linear;
+}
+
+.featured .item:hover,
+.clients .brand a:hover {
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.06), -10px 10px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.featured .item .thumb {
+  width: 100%;
+  height: 227px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.featured .item .body {
+  padding: 17px 20px 24px;
+}
+
+.featured .item .title a {
+  color: #000339;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.featured .item .desc {
+  --line-clamp: 3;
+  margin-top: 11px;
+  color: #a3a6ab;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.featured .item .info {
+  display: flex;
+  align-items: center;
+  margin-top: 21px;
+}
+
+.featured .item .label + .icon {
+  margin-left: 23px;
+}
+
+.featured .item .label {
+  margin-left: 8px;
+  color: #444;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* 🌼🌼 ====================
+  ========   Stats    =======
+  ==================== 🌼🌼 */
+
+.stats {
+  margin-top: 84px;
+  padding: 50px 0;
+}
+
+.stats .content {
+  width: 1048px;
+}
+
+.stats .row {
+  display: flex;
+}
+
+.stats .img-block,
+.stats .info {
+  width: 50%;
+}
+
+.stats .img-block {
+  position: relative;
+}
+
+.stats .img-block .img {
+  display: block;
+  margin-left: auto;
+  width: 400px;
+  height: 460px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.stats .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.stats-trend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 239px;
+  padding: 45px 22px 40px;
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 30px 25px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+.stats-trend .value {
+  color: #000339;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.stats-trend .icon {
+  margin-left: auto;
+}
+
+.stats-trend .desc {
+  margin-top: 8px;
+  color: #a7a7a7;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.stats-trend .separate {
+  height: 1.2px;
+  margin-top: 25px;
+  background: #e9e9e9;
+}
+
+.stats .avatar-block {
+  display: flex;
+  gap: 16px 14px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.stats .avatar-group {
+  display: flex;
+}
+
+.stats .avatar {
+  width: 24px;
+  height: 24px;
+  margin-left: -10px;
+  padding: 1px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: transform 0.2s linear, border-color 0.2s linear, z-index 0.2s linear;
+}
+
+.stats .avatar:hover {
+  transform: scale(1.5) translate(0, -4px);
+  z-index: 3;
+  border-color: #0689ff;
+  cursor: pointer;
+}
+
+.stats .avatar-1 {
+  background: #f97f6b;
+  color: #fff;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 450;
+  line-height: 16px;
+}
+
+.stats .sub-title {
+  position: relative;
+  width: 62%;
+  color: #000339;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.stats .sub-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  display: block;
+  width: 41px;
+  height: 4px;
+  border-radius: 1.2rem;
+  background: #000339;
+}
+
+.stats .info .desc {
+  width: 62%;
+  margin-top: 20px;
+  color: #5a6473;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+.stats .row-qty {
+  justify-content: space-between;
+  margin-top: 110px;
+  padding: 0 32px;
+}
+
+.stats .qty {
+  color: #000;
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.stats .qty-desc {
+  margin-top: 26px;
+  color: #7b8087;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* 🌼🌼 ====================
+  ========   Subscription     =======
+  ==================== 🌼🌼 */
+
+.subscription {
+  margin-top: 90px;
+}
+
+.subscription .body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 370px;
+  border-radius: 20px;
+  background: #063183;
+}
+
+.subscription .info {
+  width: 671px;
+  max-width: 100%;
+  padding: 0 80px;
+}
+
+.subscription .sub-title {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.subscription .desc {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+.subscription .btn {
+  margin-top: 20px;
+  min-width: 151px;
+  background: #fff;
+  color: #002366;
+}
+
+.subscription .image {
+  position: absolute;
+  bottom: 0;
+  right: 220px;
+}
+
+/* 🌼🌼 ====================
+========   Footer     =======
+==================== 🌼🌼 */
+
+.footer {
+  display: flex;
+  margin-top: 55px;
+  padding: 50px 0 58px;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .colum {
+  width: 25%;
+  padding-inline: 10px;
+}
+
+.footer .heading {
+  margin-bottom: 42px;
+  color: #1c1c1d;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.footer .desc,
+.footer .item a {
+  color: #7a7a7e;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.footer .desc,
+.footer .item {
+  margin-bottom: 20px;
+}
+
+.footer .social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer .social-link {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.footer .row:last-child {
+  margin-top: 80px;
+  color: #c2c2c2;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
